@@ -13,9 +13,18 @@ const fName = "Chidpon";
 const lName = "Jaimun";
 const date = new Date();
 const year = date.getFullYear();
+
+const customStyle = {
+  color: "red",
+  fontSize: "40px",
+  border: "1px solid blue"
+};
+
+customStyle.border = "1px solid black";
+
 ReactDOM.render(
   <div>
-    <p>Created by {fName + " " + lName}.</p>
+    <p style={customStyle}>Created by {fName + " " + lName}.</p>
     <p>Copyright {year}.</p>
   </div>,
   document.getElementById("root")
